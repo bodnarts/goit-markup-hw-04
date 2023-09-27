@@ -84,11 +84,20 @@ img {
   content: '';
   width: 48px;
   height: 24px;
-  color: #404BBF;;
+  background: #404BBF;
 }
 
 .header-menu-link:hover {
   color: #404bbf;
+}
+
+.header-menu-link:hover::after {
+  content: '';
+  width: 48px; 
+  height: 4px; 
+  top: 44px; 
+  border-radius: 2px;
+  background: #404BBF;
 }
 
 .header-menu-link:focus {
