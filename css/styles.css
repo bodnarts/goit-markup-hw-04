@@ -78,12 +78,14 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  position: relative;
 }
 
-.header-menu-link::after {
+.studio-link::after {
   content: '';
   width: 48px;
   height: 24px;
+  position: absolute;
   background: #404BBF;
 }
 
@@ -91,12 +93,13 @@ img {
   color: #404bbf;
 }
 
-.header-menu-link:hover::after {
+.studio-link::after {
   content: '';
   width: 48px; 
   height: 4px; 
-  top: 44px; 
+  top: 44px;
   border-radius: 2px;
+  position: absolute;
   background: #404BBF;
 }
 
