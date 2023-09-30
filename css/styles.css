@@ -88,14 +88,6 @@ img {
   position: relative;
 }
 
-.studio-link::after {
-  content: '';
-  width: 48px;
-  height: 24px;
-  position: absolute;
-  background: #404BBF;
-}
-
 .header-menu-link:hover {
   color: #404bbf;
 }
@@ -340,6 +332,14 @@ p {
   justify-content: center;
 }
 
+.social-link-team:hover {
+  background-color: #404bbf;
+}
+
+.social-link-team:focus {
+  background-color: #404bbf;
+}
+
 .team-soc-icon {
   fill: #f4f4fd;
 }
@@ -459,6 +459,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social-link-footer:hover {
+  background-color: #31d0aa;
+}
+
+.social-link-footer:focus {
+  background-color: #31d0aa;
 }
 
 .footer-soc-icon {
