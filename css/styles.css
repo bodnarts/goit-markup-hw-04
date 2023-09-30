@@ -384,6 +384,7 @@ p {
   background: var(--NAVY-BLUE, #2e2f42);
   color: var(--CLOUD, #f4f4fd);
 }
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -405,7 +406,6 @@ p {
   display: flex;
   gap: 16px;
 }
-
 
 .fotter-soial-inst {
   width: 100%;
