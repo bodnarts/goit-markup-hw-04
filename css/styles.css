@@ -86,17 +86,19 @@ img {
   color: #2e2f42;
   padding: 24px 0;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu-link:hover {
-  color: #404bbf;
+.header-menu-link .current {
+ color: #404bbf;
 }
 
-.header-menu-link::after {
+.current::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
+  width: 100%;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
@@ -121,7 +123,7 @@ img {
 }
 
 .header-address-item {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
 }
 
 .header-address-link {
@@ -143,7 +145,7 @@ img {
 .order-section {
   background: var(--NAVY-BLUE, #2e2f42);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-  rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1-min.jpg);
+  rgba(46, 47, 66, 0.7)), url(../images/people-office1-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -151,6 +153,8 @@ img {
   justify-content: center;
   flex-shrink: 0;
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .order-container {
@@ -333,6 +337,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-team:hover {
@@ -387,9 +392,7 @@ p {
 .portfolio-item {
   width: calc((100% - 48px) / 3);
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -418,7 +421,7 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-image-text:hover {
+.portfolio-item:hover .portfolio-image-text:hover {
   transform: translateY(0%);
 }
 
@@ -475,6 +478,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer:hover {
